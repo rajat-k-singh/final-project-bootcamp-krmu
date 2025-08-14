@@ -1,0 +1,35 @@
+{
+  "name": "travel-agency-app",
+  "version": "1.0.0",
+  "description": "AI-powered travel application with DeepSeek, Wikivoyage, and flight APIs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "seed": "cd server && npm run seed",
+    "setup": "npm run install-all && npm run seed"
+  },
+  "keywords": [
+    "travel",
+    "ai",
+    "deepseek",
+    "wikivoyage",
+    "flights",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
